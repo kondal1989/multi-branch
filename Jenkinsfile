@@ -4,17 +4,17 @@ pipeline {
     stages {   
         stage('Future1 branch') { 
             steps { 
-               sh 'echo "This is master branch"' 
+               sh 'echo "This is future1 branch"' 
             }
         }
      
         stage('sprint1') { 
             steps { 
-               sh 'echo "sprint1 application..."'
+               sh 'echo "future1 application..."'
             }
         }
 
-        stage("Deploy application") { 
+        stage("future1 Deploy application") { 
              steps { 
                 sh 'echo "Deploying application..."'
             }
